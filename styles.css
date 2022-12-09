@@ -1,0 +1,199 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #404040;
+    margin: 0;
+    
+}
+
+
+/* =================
+    Typography 
+   ================= */
+
+h1 {
+    font-weight: 400;
+    font-size: 2.5rem;
+    text-shadow: 0 2px #ccc;
+    order: 2;
+}
+
+h2 {
+    font-size: 2.25rem;
+    margin: 0 0.167em
+}
+
+.beta-text { 
+    font-weight: 900;
+    order: 3;
+}
+
+.subheading {
+    color: #575757;
+    font-weight: 900;
+    margin-bottom: .5em;
+}
+
+.beta-text,
+.subheading {
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 1.125rem;
+    line-height: 1.35;
+}
+
+.top-text {
+    font-size: 0.875rem;
+    font-weight: 900;
+    padding-top: .25em;
+    border-top: 5px solid;
+    order: -1;
+    margin: 0 auto;
+    text-transform: uppercase;
+    
+}
+
+.fine-print {
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+    color: #858585;
+}
+
+/* =================
+    Flex Containers
+   ================= */
+
+   .intro,
+   .main-content {
+    display: flex;
+    flex-direction: column;
+    padding-left: 2em;
+    padding-right: 2em;
+   }
+
+
+
+/* =================
+    Intro
+   ================= */
+   
+.intro { 
+    color: black;
+    min-height: 250px;
+    text-align: center;
+    align-content: center;
+    justify-content: space-between;
+    background-image: linear-gradient(rgba(255,255,255,.6), rgba(255,255,255,.6)),  url('images/Tasty_waffle_breakfast_cute_sweet_food_bakery_logo_cartoon_hand_drawn_cartoon_art_illustration.jpg');
+    background-size: cover;
+    padding-bottom: 1.5em;   
+}
+
+/* ====================
+    Main content
+   ==================== */
+
+   .main-content {
+    align-items: center;
+    padding-top: 2.5em;
+   }
+
+   .img-main {
+    width: 120px;
+    border-radius: 50%;
+   }
+
+   .main-content p,
+   form {
+    max-width: 450px;
+   }
+
+/* =================
+    Form
+   ================= */
+   
+input,
+button {
+    font-family: inherit;
+    width: 100%;
+    border-radius: 5px;
+}
+
+input {
+    margin-bottom: 0.75em;
+    padding: .5em;
+    border: 2px solid #d1d5db;
+}
+
+input:focus {
+    outline: none;
+    border-color: #fec77d;
+    background-color: #e6e8ec;
+}
+
+.btn {
+    border: none;
+    padding: .75em;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.btn-primary {
+    color: white;
+    background-color: #fec77d;
+    margin-top: 1em;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: #fee3b9;
+}
+
+
+
+/* =================
+    Media queries 
+   ================= */
+
+
+   @media (min-width: 576px) {
+
+    body {
+        display: flex;
+    }
+
+    .intro,
+    .main-content {
+        flex-basis: 50%;
+    }
+
+    .main-content {
+        justify-content: center;
+        padding-top: 0;
+    }
+
+    .intro {
+        min-height: 100vh;
+    }
+
+    h1 {
+        font-size: 5vw;
+    }
+
+    h2 {
+        font-size: 2.625rem;
+    }
+
+    .beta-text {
+        font-size: 1.25rem;
+    }
+
+   }
