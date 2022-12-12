@@ -91,7 +91,7 @@ p {
     text-align: center;
     align-content: center;
     justify-content: space-between;
-    background-image: linear-gradient(rgba(254, 199, 125,.8), rgba(254,199,125,.8)),  url('images/Tasty_waffle_breakfast_cute_sweet_food_bakery_logo_cartoon_hand_drawn_cartoon_art_illustration.jpg');
+    background-image: linear-gradient(rgba(254, 199, 125,.8), rgba(254,199,125,.8)),  url('images/waffle-bg-min.jpg');
     background-size: 200px;
     padding-bottom: 1.5em;   
 }
